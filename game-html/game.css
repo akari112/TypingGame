@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body {
+  padding-top: 40px;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+
+.main,
+.result{
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.start,
+.replay {
+  height: 50px;
+  width: 150px;
+  border: solid 1px #fff;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  display: show;
+}
+
+.game-title {
+  display: show;
+  font-size: 110px;
+  font-weight: 500;
+  text-shadow: 2px 4px 6px rgb(75, 151, 238);
+  margin-bottom: 30px;
+}
+
+.rank {
+  font-size: 130px;
+  font-family: fantasy;
+  text-shadow: 2px 4px 6px rgb(75, 151, 238);
+  margin-top: 20px;
+}
+
+.info {
+  color: rgb(87, 85, 85);
+}
+
+footer {
+  background-color: rgb(79, 117, 223);
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+
+@media (max-width: 550px) { 
+.game-title {
+  font-size: 17vw;
+}
+}

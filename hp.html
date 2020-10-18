@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="utf-8">
+  <title>PGL Typing Game</title>
+  <meta name="description" content="プログラミング言語のリファレンスのタイピングゲームです。ゲーム感覚でプログラミングの練習しましょう。">
+
+  <link rel="stylesheet" href="hp.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="top">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary">
+      <a class="navbar-brand" href="">PGL TypingGame</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="hp.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#rule">ルール</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ゲーム
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="game-html/html.html" class="dropdown-item">HTML</a>
+              <a href="game-html/css.html" class="dropdown-item">CSS</a>
+              <a href="game-html/js.html" class="dropdown-item">JavaScript</a>
+              <a href="game-html/php.html" class="dropdown-item">PHP</a>
+              <a href="#" class="dropdown-item disabled">Python(Coming soon)</a>
+              <a href="#" class="dropdown-item disabled">Java(Coming soon)</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="info/info.php">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="top-imag">
+      <div class="title">
+        <h1>PGL Typing Game</h1>
+        <h2>HTMLやJavaScriptなどのプログラミング言語のタイピング練習するゲームです。</h2><br>
+        <h2>プログラミング初心者の方や、タイピングの速度を向上させたい方</h2><br>
+        <h2>ぜひゲーム感覚で楽しく勉強してください。</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="main">
+    <div class="rule" id="rule">
+      <h2 class="sub-title">ルール説明</h2>
+      <div class="carousel">
+        <a href="#main" class="controler prev" onMouseOver="this.style.opacity='0.8'" onMouseOut="this.style.opacity=''">&lt;</a>
+        <img class="rule-image" src="img/rule1.png" alt="ゲーム中画像" id="rule-image" >
+        <a href="#main" class="controler next" onMouseOver="this.style.opacity='0.8'" onMouseOut="this.style.opacity=''">&gt;</a>
+      </div>
+      <div class="rule-text">
+        <p class="rule-text1">startボタンを押すとゲームがスタートします。<br>制限時間は１分間です。<br></p>
+        <p class="rule-text2">プログラミング言語のリファレンスが表示されます。<br>その下にタイプ数、ミスタイプ数、残りの時間が表示されています。</p>
+        <p class="rule-text3">タイピングした文字が正解なら<br>アンダーバーに切り替わります。</p>
+        <p class="rule-text4">1分が経つと結果画面が表示され<br>ランク、タイプ数、ミスタイプ数、正解率<br>が表示されます。<br>
+        ランクは五段階評価で<br>Excellent、VeryGood、Good、Average、Poor<br>の５つです。<br>
+        Excellent目指して頑張りましょう！</p>
+      </div>
+    </div>
+  
+    <div class="game">
+      <h2 class="sub-title">ゲーム</h2>
+      <div class="game-list">
+        <div class="game-item">
+          <a href="game-html/html.html" style="text-decoration: none;">
+            <h1><span><i class="fab fa-html5"></i></span>HTML</h1>        
+          </a>
+        </div>
+        <div class="game-item">
+          <a href="game-html/css.html" style="text-decoration: none;">
+            <h1><span><i class="fab fa-css3"></i></span>CSS</h1>        
+          </a>
+        </div>
+        <div class="game-item">
+          <a href="game-html/js.html" style="text-decoration: none;">
+            <h1><span><i class="fab fa-js-square"></i></span>JavaScript</h1>        
+          </a>
+        </div>
+        <div class="game-item">
+          <a href="game-html/php.html" style="text-decoration: none;">
+            <h1><span><i class="fab fa-php"></i></span>PHP</h1>   
+          </a>
+        </div>
+        <div class="game-item">
+          <a href="#" style="text-decoration: none;">
+            <h1><span><i class="fab fa-python"></i></span>Python</h1>
+            <p class="com">(Coming soon)</p>     
+          </a>
+        </div>
+        <div class="game-item">
+          <a href="#" style="text-decoration: none;">
+            <h1><span><i class="fab fa-java"></i></span>Java</h1>  
+            <p class="com">(Coming soon)</p>           
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2020 PGL Typing Game
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="main.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+</body>
+
+</html>
