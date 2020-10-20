@@ -19,7 +19,7 @@ There is also an inquiry form
 * mySQL
 * Virtual Studio Code
 
-# Note
+# URL
 
 * http://pgltypinggame.sakura.ne.jp/hp.html
 
